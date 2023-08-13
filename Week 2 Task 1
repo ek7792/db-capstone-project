@@ -1,0 +1,2 @@
+SELECT * from Orders
+Where quantity > 2;
