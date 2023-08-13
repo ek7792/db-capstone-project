@@ -1,0 +1,11 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `admin2`@`%` 
+    SQL SECURITY DEFINER
+VIEW `ordersview` AS
+    SELECT 
+        `orders`.`OrderID` AS `OrderId`,
+        `orders`.`Quantity` AS `Quantity`,
+        `orders`.`TotalCost` AS `TotalCost`
+    FROM
+        `orders`
