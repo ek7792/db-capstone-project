@@ -1,0 +1,12 @@
+USE `db-capstone-project`;
+DROP procedure IF EXISTS `AddBooking`;
+
+DELIMITER $$
+USE `db-capstone-project`$$
+CREATE PROCEDURE `AddBooking` (bookingId int, customerId int, bookingDate datetime, tableNumber int)
+BEGIN
+
+END$$
+
+DELIMITER ;
+
