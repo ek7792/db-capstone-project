@@ -1,0 +1,12 @@
+USE `db-capstone-project`;
+DROP procedure IF EXISTS `CancelBooking`;
+
+DELIMITER $$
+USE `db-capstone-project`$$
+CREATE PROCEDURE `CancelBooking` (BookingId int)
+BEGIN
+Delete from Bookings Where BookingID = 9; 
+END$$
+
+DELIMITER ;
+
