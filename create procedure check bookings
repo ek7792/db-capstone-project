@@ -1,0 +1,10 @@
+SELECT * FROM `db-capstone-project`.Bookings;
+
+DELIMITER //
+
+CREATE PROCEDURE CheckBookings()
+BEGIN
+	SELECT *  FROM Bookings;
+END //
+
+DELIMITER ;
