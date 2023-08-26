@@ -1,0 +1,14 @@
+USE `db-capstone-project`;
+DROP procedure IF EXISTS `UpdateBooking`;
+
+DELIMITER $$
+USE `db-capstone-project`$$
+CREATE PROCEDURE `UpdateBooking` (bookingId int, bookingDate datetime )
+BEGIN
+Update Bookings
+Set BookingId = 2, BookingDate = 2022-03-04
+Where CustomerId = 3; 
+END$$
+
+DELIMITER ;
+
