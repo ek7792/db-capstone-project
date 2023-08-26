@@ -1,0 +1,19 @@
+CREATE PROCEDURE AddValidBooking
+(
+   Date datetime,
+   TableNumber int
+) 
+BEGIN 
+   SELECT COUNT(*) FROM bookings
+   WHERE bookings.dat=Date 
+   AND bookings.tanum=TableNumber
+END ; 
+
+Start TRANSACTION; 
+
+  INSERT INTO Bookings
+  VALUES (6, '2022-12-16', 7, 4); 
+ 
+  SELECT @TableNumber = COUNT(*) FROM Booking WHERE BookingId = 5 ; 
+   IF TableNumber > 1
+      ROLLBACK; 
