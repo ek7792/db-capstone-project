@@ -1,0 +1,5 @@
+SELECT *
+    FROM Orders
+    LEFT JOIN CustomerDetails
+         ON TotalCost.CustomerDetails = Orders.CustomerDetails
+   WHERE Orders.TotalCost > 60
